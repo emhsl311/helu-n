@@ -1,0 +1,9 @@
+[build]
+  base = "hostkompas"
+  command = "node build.mjs"
+  publish = "dist"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
